@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-box:none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #DEE1E5;
+}
+
+/* === РЕГИСТРАЦИЯ === */
+#reg {
+    font-family: verdana;
+    font-size: 18px;
+    margin: 50px auto;
+    width: 30%;
+    min-width: 400px;
+    border:2px solid #1da1f2;
+    padding: 25px;
+    border-radius: 20px 20px;
+    text-align: center;
+}
+#reg h3,#reg p{
+    padding-bottom: 10px;
+}
+#reg input{
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 55%;
+    margin-bottom: 10px;
+    padding: 0px 5px;
+}
+#reg input[type='submit'],.admin{
+    border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #1da1f2;
+    border: 1px solid #1da1f2;
+    color: #fff;
+    height: 50px;
+    width: 50%;
+    min-width: 140px;
+}
+#reg input[type='submit']:hover,.admin:hover{
+    background-color: #006dbf;
+    border-color: #006dbf;
+    color: #fff;
+}
+#reg .err{
+    color: red;
+}
+#reg .norm{
+    color: green;
+}
+#reg a{
+    margin-top: 10px;
+}
+#reg .signup a{
+    border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #79bc64;
+    border: 1px solid #79bc64;
+    color: #fff;
+    height: 50px;
+    width: 50%;
+    text-decoration: none;
+}
+#reg .signup a:hover{
+    background-color: #578843;
+    border: 1px solid #578843;
+}
+
+/* === стайлы для index === */
+header{
+    width: 80%;
+    height: 65px;
+    background: #424B5F;
+    color: #FFF;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+header h1{
+    padding-top: 10px;
+}
+header h1 span{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+header a{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    background: #ff0000;
+    border-radius: 25px 25px;
+    color:#fff;
+    line-height: 40px;
+    margin-bottom: 20px;
+    border:2px solid #fff;
+}
+header a:hover{
+    background: #cc0000;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+#lsb{
+    width: 20%;
+    min-width: 250px;
+    float:left;
+    background: #4F5A6E;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    height: 100vh;
+}
+#lsb ul{
+    list-style-type: none;
+}
+#lsb li:first-child{
+    padding-top: 10px;
+}
+#lsb li{
+    text-decoration: none;
+}
+#lsb li a{
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+}
+#lsb li a:hover{
+    background: #606d86;
+    color: #1BA8ED!important;
+}
+#lsb .read li a{
+    color:#a7b3cb;
+
+}
+#lsb .not_read li a{
+    color:#fff;
+
+}
+#lsb .read li:first-child{
+    padding-top: 10px;
+}
+#lsb table{
+    margin: auto;
+}
+
+#lsb input[type='submit']{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    height: 40px;
+    width: 30%;
+}
+
+content{
+    width: 80%;
+    background: #FFF;
+    float:right;
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    height: 100vh;
+}
+.username h3{
+    padding: 20px;
+    font-size: 24px;
+}
+.title p{
+    padding: 20px;
+    font-size: 24px;
+    text-decoration: underline;
+}
+.text p{
+    padding: 20px;
+    font-size: 18px;
+}
+
+
+/* ======АВТОРИЗАЦИЯ===============*/
+#signup {
+    font-family: verdana;
+    font-size: 18px;
+    margin: 50px auto;
+    width: 30%;
+    min-width: 300px;
+    border:2px solid #1da1f2;
+    padding: 25px;
+    border-radius: 20px 20px;
+    text-align: center;
+}
+#signup h3,#signup p{
+    padding-bottom: 10px;
+}
+#signup input{
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 0px 5px;
+}
+#signup input[type='submit']{
+    border-radius: 100px;
+    width: 200px !important;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #79bc64;
+    border: 1px solid #79bc64;
+    color: #fff;
+    height: 50px;
+    width: 40%;
+    text-decoration: none;
+}
+#signup input[type='submit']:hover{
+    background-color: #508f3d;
+    border-color: #508f3d;
+    color: #fff;
+}
+#signup .err{
+    color: red;
+}
+#signup .norm{
+    color: green;
+}
+#signup a{
+    margin-top: 10px;
+}
+#signup .signup a{
+    border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #79bc64;
+    border: 1px solid #79bc64;
+    color: #fff;
+    height: 50px;
+    width: 200px;
+    text-decoration: none;
+}
+#signup .signup a:hover{
+    background-color: #578843;
+    border: 1px solid #578843;
+}
+/* для кнопки добавления админа*/
+.admin{
+    border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #1da1f2;
+    border: 1px solid #1da1f2;
+    color: #fff;
+    height: 50px;
+    width: 50%;
+    min-width: 140px;
+}
+/* для отправки сообщений*/
+
+.select{
+    font-family: verdana;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+    height: 50px;
+    width: 55%;
+    margin-bottom: 10px;
+    padding: 0px 5px;
+}
+.margin{
+    margin-top: -50px;
+}
+#lsb a{
+    color:#a7b3cb;
+}
+#lsb a:hover{
+    background: #606d86;
+    color: #1BA8ED!important;
+}
